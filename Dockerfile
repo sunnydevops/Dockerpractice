@@ -1,6 +1,6 @@
 FROM ubuntu:xenial
 MAINTAINER Krishna
-RUN apt-get -y install openjdk-8-jdk
+RUN apt-get -y install openjdk-6-jdk
 RUN apt-get update
 RUN apt-get -y install tomcat7
 RUN mkdir -p /var/lib/tomcat7/webapps/  
