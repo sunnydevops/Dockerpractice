@@ -8,6 +8,6 @@ RUN apt-get -y install oracle-java7-installer
 RUN apt-get -y install tomcat7
 RUN echo "JAVA_HOME=/usr/lib/jvm/java-7-oracle" >> /etc/default/tomcat7
 EXPOSE 8080
-RUN mkdir /var/lib/tomcat7/webapps
+RUN mkdir /usr/local/tomcat/webappas
 ADD https://downloads.sourceforge.net/project/openmrs/releases/OpenMRS_Platform_2.0.4.1/openmrs.war /usr/local/tomcat/webappas/openmrs.war
 CMD ["catalina.sh", "run"]
